@@ -601,7 +601,7 @@ def main():
     delta_t=y-x
 
     secs=delta_t.total_seconds()
-    t = Timer(secs, update)
+    t = Timer(secs, update_weather)
     t.start()
     while True:
         pass
