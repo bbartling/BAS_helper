@@ -36,7 +36,7 @@ for i in range(10):
     _new_objects = analog_output(
     name=f"DPR{i}-O",
     properties={"units": "percent"},
-    description="VAV Box {i} Damper Output",
+    description=f"VAV Box {i} Damper Output",
     presentValue=50,is_commandable=False
     )
   
