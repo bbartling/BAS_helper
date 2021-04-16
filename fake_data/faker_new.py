@@ -51,7 +51,7 @@ _new_objects = analog_value(
 
      
 # create app
-bacnet = BAC0.lite()
+bacnet = BAC0.lite(ip='10.0.2.20/24',deviceId='2021')
 
 _new_objects.add_objects_to_application(bacnet)
 
