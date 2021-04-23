@@ -2,7 +2,8 @@ import BAC0,time,random
 
 from BAC0.core.devices.local.models import (
     analog_output,
-    analog_value
+    analog_value,
+    binary_value
     )
 
 from BAC0.tasks.RecurringTask import RecurringTask 
@@ -37,6 +38,14 @@ _new_objects = analog_value(
         properties={"units": "inchesOfWater"},
         description="AHU Duct Pressure Setpoint",
         presentValue=1,is_commandable=True
+    )
+
+
+# create AHU duct pressure setpoint point
+_new_objects = binary_value(
+        name="SF-S",
+        description="AHU Supply Fan Status Writeable for testing",
+        presentValue=True,is_commandable=True
     )
 
      
